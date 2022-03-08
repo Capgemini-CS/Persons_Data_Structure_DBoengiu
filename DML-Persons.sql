@@ -19,6 +19,10 @@ INSERT INTO persons.cars (BRAND, MODEL) VALUES ('BMW', 'X6');
 INSERT INTO persons.cars (BRAND, MODEL) VALUES ('Mercedes', 'S-Class');
 INSERT INTO persons.cars (BRAND, MODEL) VALUES ('Porsche', 'Taycan');
 
+UPDATE persons.cars
+SET PERSON_ID = 3
+WHERE CAR_ID = 4;
+
 
 
 SELECT * FROM persons.cars;
@@ -39,7 +43,9 @@ SELECT * FROM persons.addresses;
 
 ----------------Operations performed on persons.people table--------------
 
-
+UPDATE persons.people
+SET ADDRESS_ID = 3
+WHERE PEOPLE_ID = 4;
 
 DELETE FROM persons.people WHERE id = 4;
 
