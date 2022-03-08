@@ -1,4 +1,4 @@
-----------Operations performed on persons.jobs table-------------
+//----------Operations performed on persons.jobs table-------------
 
 
 INSERT INTO persons.jobs (JOB_NAME, SALARY) VALUES ('Programmer', 3000);
@@ -11,7 +11,7 @@ SELECT * FROM persons.jobs;
 
 
 
------------Operations performed on persons.cars table-------------
+//-----------Operations performed on persons.cars table-------------
 
 
 INSERT INTO persons.cars (BRAND, MODEL) VALUES ('Audi', 'A4');
@@ -28,7 +28,7 @@ WHERE CAR_ID = 4;
 SELECT * FROM persons.cars;
 
 
-----------------Operations performed on persons.addresses table-------------
+//----------------Operations performed on persons.addresses table-------------
 
 
 INSERT INTO persons.addresses (STREET_NUMBER, STREET_NAME) VALUES (24, 'Maine');
@@ -41,7 +41,7 @@ INSERT INTO persons.addresses (STREET_NUMBER, STREET_NAME) VALUES (80, 'udurjx')
 SELECT * FROM persons.addresses;
 
 
-----------------Operations performed on persons.people table--------------
+//----------------Operations performed on persons.people table--------------
 
 UPDATE persons.people
 SET ADDRESS_ID = 3

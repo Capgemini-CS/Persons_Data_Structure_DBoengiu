@@ -1,4 +1,4 @@
----------------Create persons.people table------------
+//---------------Create persons.people table------------
 
 
 CREATE TABLE persons.people(
@@ -12,7 +12,7 @@ CREATE TABLE persons.people(
 
 
 
-----------------Create persons.cars table ---------------------------------
+//----------------Create persons.cars table ---------------------------------
 
 
 create table persons.cars(
@@ -23,7 +23,7 @@ create table persons.cars(
 );
 
 
--------------Create persons.jobs table----------------------------------
+//-------------Create persons.jobs table----------------------------------
 
 
 create table persons.jobs(
@@ -36,7 +36,7 @@ create table persons.jobs(
 
 
 
---------------Create persons.addresses--------------------------------
+//--------------Create persons.addresses--------------------------------
 
 
 create table persons.addresses(
