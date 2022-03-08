@@ -28,6 +28,12 @@ FROM ((persons.cars
 INNER JOIN persons.people ON persons.cars.PEOPLE_ID = persons.people.PEOPLE_ID));
 
 
+SELECT persons.cars.BRAND, persons.cars.MODEL
+FROM persons.cars
+LEFT JOIN persons.people
+ON persons.cars.PEOPLE_ID = persons.persons.PEOPLE_ID;
+
+
 
 SELECT * FROM persons.cars;
 
@@ -54,6 +60,12 @@ WHERE PEOPLE_ID = 4;
 SELECT persons.people.FIRST_NAME, persons.people.LAST_NAME, persons.addresses.STREET_NUMBER
 FROM ((persons.people
 INNER JOIN persons.addresses ON persons.people.ADDRESS_ID = persons.addresses.ADDRESS_ID));
+
+
+SELECT persons.people.FIRST_NAME, persons.people.LAST_NAME, persons.people.ADDRESS_ID
+FROM persons.people
+LEFT JOIN persons.addresses
+ON persons.people.ADDRESS_ID = persons.addresses.ADDRESS_ID;
 
 DELETE FROM persons.people WHERE id = 4;
 
