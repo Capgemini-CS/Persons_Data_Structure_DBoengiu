@@ -23,6 +23,10 @@ UPDATE persons.cars
 SET PERSON_ID = 3
 WHERE CAR_ID = 4;
 
+SELECT persons.cars.BRAND, persons.cars.MODEL, persons.people.FIRST_NAME, persons.people.LAST_NAME
+FROM ((persons.cars
+INNER JOIN persons.people ON persons.cars.PEOPLE_ID = persons.people.PEOPLE_ID));
+
 
 
 SELECT * FROM persons.cars;
@@ -46,6 +50,10 @@ SELECT * FROM persons.addresses;
 UPDATE persons.people
 SET ADDRESS_ID = 3
 WHERE PEOPLE_ID = 4;
+
+SELECT persons.people.FIRST_NAME, persons.people.LAST_NAME, persons.addresses.STREET_NUMBER
+FROM ((persons.people
+INNER JOIN persons.addresses ON persons.people.ADDRESS_ID = persons.addresses.ADDRESS_ID));
 
 DELETE FROM persons.people WHERE id = 4;
 
